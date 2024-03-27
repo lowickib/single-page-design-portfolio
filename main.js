@@ -26,10 +26,7 @@ const hideElement = (imgElement) => {
 };
 
 const showElement = async (imgElement) => {
-	console.log('wait');
-	console.log(transitionTime);
 	await delay(transitionTime);
-	console.log('waited');
 	imgElement.classList.remove('hidden');
 };
 
