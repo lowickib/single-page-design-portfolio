@@ -1,0 +1,155 @@
+@use '../abstracts' as *;
+
+.section-hero {
+	text-align: center;
+	margin-bottom: 10rem;
+	@include respond-to('medium') {
+		margin-bottom: 12rem;
+	}
+	@include respond-to('large') {
+		margin-bottom: 13.6rem;
+	}
+
+	&__content {
+		display: inline-block;
+		margin-bottom: 3.2rem;
+
+		@include respond-to('medium') {
+			margin-bottom: 6.4rem;
+		}
+		@include respond-to('large') {
+			margin-bottom: 8rem;
+		}
+	}
+
+	&__heading {
+		display: inline-block;
+		margin-bottom: 1.6rem;
+
+		@include respond-to('medium') {
+			margin-bottom: 2.7rem;
+		}
+		@include respond-to('large') {
+			margin-bottom: 2.3rem;
+		}
+	}
+	&__body {
+		margin: 0 auto;
+		width: 0;
+		min-width: 80%;
+
+		@include respond-to('medium') {
+			min-width: 95%;
+		}
+	}
+
+	&__features {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas:
+			'design design'
+			'uiux apps'
+			'illustrations illustrations'
+			'photography photography'
+			'graphics graphics';
+		gap: 2.4rem;
+
+		@include respond-to('grid') {
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-areas:
+				'design design design design uiux uiux'
+				'design design design design apps apps'
+				'illustrations illustrations illustrations photography photography photography'
+				'graphics graphics graphics graphics graphics graphics';
+		}
+
+		@include respond-to('medium') {
+			grid-template-columns: repeat(4, 1fr);
+			grid-template-areas:
+				'design design uiux apps'
+				'design design illustrations illustrations'
+				'photography photography graphics graphics';
+		}
+
+		@include respond-to('large') {
+			grid-template-columns: repeat(6, 1fr);
+			grid-template-areas:
+				'design design uiux apps photography photography'
+				'design design illustrations illustrations graphics graphics';
+		}
+	}
+}
+.feature-item {
+	display: flex;
+	flex-direction: column;
+	padding: 2.4rem;
+	border-radius: 0.8rem;
+	
+	&__icon {
+		align-self: end;
+	}
+
+	&__heading {
+		align-self: start;
+		font-size: 2.4rem;
+		line-height: 3rem;
+		color: #fff;
+	}
+
+	&[data-type='graphic-design'] {
+		gap: 9.4rem;
+	}
+
+	&[data-type='uiux'],
+	&[data-type='apps'],
+	&[data-type='photography'],
+	&[data-type='motion-graphics'] {
+		gap: 4rem;
+	}
+	&[data-type='motion-graphics'] {
+		@include respond-to('grid') {
+			gap: 1.6rem;
+		}
+
+		@include respond-to('medium') {
+			gap: 4rem;
+		}
+	}
+
+	&[data-type='illustrations'] {
+		gap: 1.6rem;
+
+		@include respond-to('grid') {
+			gap: 4rem;
+		}
+
+		@include respond-to('medium') {
+			gap: 1.6rem;
+		}
+	}
+
+	&[data-type='graphic-design'] {
+		grid-area: design;
+		background-color: $clr-accent-1;
+	}
+	&[data-type='uiux'] {
+		grid-area: uiux;
+		background-color: $clr-accent-2;
+	}
+	&[data-type='apps'] {
+		grid-area: apps;
+		background-color: $clr-accent-3;
+	}
+	&[data-type='illustrations'] {
+		grid-area: illustrations;
+		background-color: $clr-accent-4;
+	}
+	&[data-type='photography'] {
+		grid-area: photography;
+		background-color: $clr-accent-5;
+	}
+	&[data-type='motion-graphics'] {
+		grid-area: graphics;
+		background-color: $clr-accent-6;
+	}
+}

@@ -1,0 +1,52 @@
+@use '../abstracts' as *;
+
+.footer {
+	margin-bottom: 3.2rem;
+	&__main {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 4.9rem 2.4rem 4.8rem;
+		margin-bottom: 4rem;
+		color: $clr-neutral;
+		background-color: $clr-black;
+		text-align: center;
+		border-radius: 1rem;
+
+		@include respond-to('medium') {
+			padding: 5.6rem 7.5rem 6.4rem;
+		}
+		@include respond-to('extra-large') {
+			padding: 8.1rem 9.5rem 8rem 6.5rem;
+			flex-direction: row;
+			text-align: left;
+		}
+	}
+
+	&__heading {
+		margin-bottom: 2.4rem;
+		@include respond-to('medium') {
+			margin-bottom: 2.6rem;
+		}
+	}
+
+	&__body {
+		margin: 0 auto;
+		margin-bottom: 2.4rem;
+		color: $clr-neutral;
+		max-width: 54rem;
+
+		@include respond-to('medium') {
+			margin-bottom: 2.6rem;
+		}
+
+		@include respond-to('extra-large') {
+			margin-bottom: 0;
+		}
+	}
+
+	&__button {
+		align-self: center;
+		flex: 0 0 fit-content;
+	}
+}

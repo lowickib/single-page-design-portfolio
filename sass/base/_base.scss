@@ -1,0 +1,19 @@
+@use '../abstracts' as *;
+
+html {
+	overflow-x: hidden;
+}
+
+body {
+	font-family: $ff-body;
+	font-weight: $fw-body;
+	color: $clr-black;
+	background: $clr-neutral;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+// ::selection {
+// }

@@ -1,0 +1,105 @@
+// Break points
+$bp-sm: 18.75em;
+$bp-md: 40em;
+$bp-lg: 56.25em;
+$bp-xlg: 65em;
+
+$bp-grid: 30em;
+
+// Container
+$max-width: 111rem;
+$min-width: 34.3rem;
+$padding-side-sm: 1.6rem;
+$padding-side-md: 3.9rem;
+
+$grid-gap: 2.4rem;
+
+// Colors
+$clr-primary: #7a746e;
+$clr-accent-1: #755cde;
+$clr-accent-2: #f6a560;
+$clr-accent-3: #f39e9e;
+$clr-accent-4: #eb7565;
+$clr-accent-5: #61c4b7;
+$clr-accent-6: #552049;
+$clr-neutral: #fff7f0;
+$clr-black: #030303;
+
+// Font families
+$ff-heading: 'Plus Jakarta Sans', sans-serif;
+$ff-body: 'Plus Jakarta Sans', sans-serif;
+$ff-button: 'Plus Jakarta Sans', sans-serif;
+
+// Font weights
+$fw-heading: 700;
+$fw-body: 500;
+$fw-button: 700;
+
+// Transition time
+$tr-time: 250ms;
+
+/////////// Fonts small screen ///////////
+
+// Heading S
+$fs-heading-s-sm: 2.4rem;
+$lh-heading-s-sm: 3rem;
+
+// Heading M
+$fs-heading-m-sm: 2.6rem;
+$lh-heading-m-sm: 3.3rem;
+
+// Heading L
+$fs-heading-l-sm: 3.6rem;
+$lh-heading-l-sm: 4.5rem;
+
+// Body
+$fs-body-sm: 1.6rem;
+$lh-body-sm: 2.6rem;
+
+// Button
+$fs-button-sm: 1.4rem;
+$lh-button-sm: 2.8rem;
+
+/////////// Fonts medium screen ///////////
+
+// Heading S
+$fs-heading-s-md: 3.2rem;
+$lh-heading-s-md: 4rem;
+
+// Heading M
+$fs-heading-m-md: 3.2rem;
+$lh-heading-m-md: 4rem;
+
+// Heading L
+$fs-heading-l-md: 4.4rem;
+$lh-heading-l-md: 5.5rem;
+
+// Body
+$fs-body-md: 1.8rem;
+$lh-body-md: 2.8rem;
+
+// Button
+$fs-button-md: 1.6rem;
+$lh-button-md: 2.8rem;
+
+/////////// Fonts large screen ///////////
+
+// Heading S
+$fs-heading-s-lg: 3.2rem;
+$lh-heading-s-lg: 4rem;
+
+// Heading M
+$fs-heading-m-lg: 4rem;
+$lh-heading-m-lg: 5rem;
+
+// Heading L
+$fs-heading-l-lg: 5.6rem;
+$lh-heading-l-lg: 7.1rem;
+
+// Body
+$fs-body-lg: 1.8rem;
+$lh-body-lg: 2.8rem;
+
+// Button
+$fs-button-lg: 1.6rem;
+$lh-button-lg: 2.8rem;

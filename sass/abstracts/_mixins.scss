@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as *;
+
+@mixin respond-to($breakpoint) {
+	@if $breakpoint == 'small' {
+		@media (min-width: $bp-sm) {
+			@content;
+		}
+	} @else if $breakpoint == 'medium' {
+		@media (min-width: $bp-md) {
+			@content;
+		}
+	} @else if $breakpoint == 'large' {
+		@media (min-width: $bp-lg) {
+			@content;
+		}
+	} @else if $breakpoint == 'extra-large' {
+		@media (min-width: $bp-xlg) {
+			@content;
+		}
+	} @else if $breakpoint == 'grid' {
+		@media (min-width: $bp-grid) {
+			@content;
+		}
+	}
+}

@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.section-slider {
+	text-align: center;
+}
+
+.slider {
+	&__container {
+		display: grid;
+		grid-template: 1fr / 1fr;
+		justify-items: center;
+		max-width: 168rem;
+		overflow: hidden;
+		margin: 3.2rem auto;
+
+		@include respond-to('medium') {
+			margin: 5.6rem auto;
+		}
+	}
+	&__item {
+		grid-row: 1 / -1;
+		grid-column: 1 / -1;
+		border-radius: 1rem;
+		transition: transform 250ms ease-out;
+	}
+
+	&__buttons {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: 1.6rem;
+	}
+
+	&__button {
+		width: 6.4rem;
+		height: 6.4rem;
+		border-radius: 50%;
+		border: none;
+		background-color: $clr-black;
+		cursor: pointer;
+
+		transition: background-color $tr-time;
+
+		&:hover {
+			background-color: $clr-accent-1;
+		}
+	}
+}

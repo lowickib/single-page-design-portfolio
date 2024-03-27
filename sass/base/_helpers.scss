@@ -1,0 +1,16 @@
+@use '../abstracts' as *;
+
+.wrapper {
+	margin: 0 auto;
+	max-width: $max-width;
+	min-width: $min-width;
+	width: min($max-width, calc(100% - (2 * $padding-side-sm)));
+
+	@include respond-to('medium') {
+		width: min($max-width, calc(100% - (2 * $padding-side-md)));
+	}
+}
+
+.hidden {
+	opacity: 0;
+}

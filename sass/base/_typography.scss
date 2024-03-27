@@ -1,0 +1,66 @@
+@use '../abstracts' as *;
+
+.paragraph {
+	font-size: $fs-body-sm;
+	line-height: $lh-body-sm;
+	color: $clr-primary;
+
+	@include respond-to('medium') {
+		font-size: $fs-body-md;
+		line-height: $lh-body-md;
+	}
+	@include respond-to('large') {
+		font-size: $fs-body-lg;
+		line-height: $lh-body-lg;
+	}
+}
+
+.heading {
+	font-family: $ff-heading;
+	font-weight: $fw-heading;
+
+	&--s {
+		font-size: $fs-heading-s-sm;
+		line-height: $lh-heading-s-sm;
+
+		@include respond-to('medium') {
+			font-size: $fs-heading-s-md;
+			line-height: $lh-heading-s-md;
+		}
+
+		@include respond-to('large') {
+			font-size: $fs-heading-s-lg;
+			line-height: $lh-heading-s-lg;
+		}
+	}
+
+	&--m {
+		font-size: $fs-heading-m-sm;
+		line-height: $lh-heading-m-sm;
+
+		@include respond-to('medium') {
+			font-size: $fs-heading-m-md;
+			line-height: $lh-heading-m-md;
+		}
+
+		@include respond-to('large') {
+			font-size: $fs-heading-m-lg;
+			line-height: $lh-heading-m-lg;
+		}
+	}
+
+	&--l {
+		font-size: $fs-heading-l-sm;
+		line-height: $lh-heading-l-sm;
+
+		@include respond-to('medium') {
+			font-size: $fs-heading-l-md;
+			line-height: $lh-heading-l-md;
+		}
+
+		@include respond-to('large') {
+			font-size: $fs-heading-l-lg;
+			line-height: $lh-heading-l-lg;
+		}
+	}
+}

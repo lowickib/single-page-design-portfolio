@@ -1,0 +1,13 @@
+.cta-bar {
+	display: flex;
+	justify-content: space-between;
+
+	&__logo-svg {
+		width: 4.8rem;
+		height: 4.8rem;
+	}
+
+	&__button {
+		align-self: center;
+	}
+}

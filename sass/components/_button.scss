@@ -1,0 +1,48 @@
+@use '../abstracts' as *;
+
+.button {
+	display: inline-block;
+	font-size: $fs-button-sm;
+	font-weight: $fw-button;
+	font-family: $ff-button;
+	line-height: $lh-button-sm;
+
+	padding: 0.8rem 2.8rem;
+
+	color: $clr-neutral;
+	background-color: $clr-black;
+
+	text-decoration: none;
+	text-transform: capitalize;
+
+	border-radius: 100rem;
+
+	cursor: pointer;
+
+	transition: background-color $tr-time;
+
+	&:hover,
+	&:focus {
+		background-color: $clr-accent-1;
+	}
+
+	&--cta {
+		background-color: $clr-accent-4;
+
+		&:hover,
+		&:focus {
+			background-color: $clr-accent-2;
+		}
+	}
+
+	@include respond-to('medium') {
+		font-size: $fs-button-md;
+		line-height: $lh-button-md;
+		padding: 1.4rem 4.5rem;
+	}
+
+	@include respond-to('large') {
+		font-size: $fs-button-lg;
+		line-height: $lh-button-lg;
+	}
+}

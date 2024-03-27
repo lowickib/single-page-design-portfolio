@@ -1,0 +1,11 @@
+@use '../abstracts' as *;
+
+.section-slider {
+	margin-bottom: 10rem;
+	@include respond-to('medium') {
+		margin-bottom: 12rem;
+	}
+	@include respond-to('large') {
+		margin-bottom: 8.8rem;
+	}
+}
