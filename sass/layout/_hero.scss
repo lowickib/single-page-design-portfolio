@@ -84,7 +84,7 @@
 	flex-direction: column;
 	padding: 2.4rem;
 	border-radius: 0.8rem;
-	
+
 	&__icon {
 		align-self: end;
 	}
@@ -109,10 +109,6 @@
 	&[data-type='motion-graphics'] {
 		@include respond-to('grid') {
 			gap: 1.6rem;
-		}
-
-		@include respond-to('medium') {
-			gap: 4rem;
 		}
 	}
 
