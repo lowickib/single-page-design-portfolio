@@ -1,3 +1,5 @@
+@use '../abstracts' as *;
+
 .cta-bar {
 	display: flex;
 	justify-content: space-between;
@@ -5,6 +7,11 @@
 	&__logo-svg {
 		width: 4.8rem;
 		height: 4.8rem;
+
+		@include respond-to('medium') {
+			width: 6.4rem;
+			height: 6.4rem;
+		}
 	}
 
 	&__button {
